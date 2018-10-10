@@ -30,7 +30,7 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/recettes">Toutes les recette</a></li>
+                    <li><a href="/recettes">Toutes les recettes</a></li>
                     <li><a href="/recette-du-moment">Recette du moment</a></li>
                 </ul>
             </div>
