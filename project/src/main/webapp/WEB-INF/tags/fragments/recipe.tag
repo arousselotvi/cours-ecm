@@ -2,6 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <%@ attribute name="recipe" required="true" rtexprvalue="true" type="fr.cmm.domain.Recipe"%>
 
@@ -15,7 +16,7 @@
         <h1>${fn:escapeXml(recipe.title)}</h1>
         <p>${fn:escapeXml(recipe.intro)}</p>
         <span class="label label-primary">${fn:escapeXml(recipe.tags)}</span>
-        <p><fmt${recipe.date}</p>
+        <p><fmt:formatDate value = "${recipe.date}" pattern = "dd MMM yyyy"/></p>
         <c:if test="${not empty recipe.ingredients}">
             <ul>
                 <c:forEach var="ingredient" items="${recipe.ingredients}">
