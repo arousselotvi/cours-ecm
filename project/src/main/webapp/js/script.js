@@ -8,7 +8,8 @@ $(function(){
             input.tokenfield({autocomplete: {
                 source: data,
                 delay: 100
-            }});
+            },
+            showAutocompleteOnFocus:true});
         })
     });
 
