@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib
+  xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd" version="2.0">
+
+    <!-- propriétés de la taglib -->
+    <tlib-version>1.0</tlib-version>
+    <short-name>text</short-name>
+    <uri>fr.cmm.tags.Functions.text</uri>
+
+    <function>
+        <!-- nom de la fonction -->
+        <name>text</name>
+        <!-- classe java contenant le code de la fonction -->
+        <function-class>fr.cmm.tags.Functions</function-class>
+        <!-- signature de la méthode *statique* dans la classe java -->
+        <function-signature>java.lang.String text(java.lang.String)</function-signature>
+    </function>
+</taglib>
