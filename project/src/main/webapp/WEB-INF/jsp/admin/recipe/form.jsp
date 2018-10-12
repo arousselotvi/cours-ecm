@@ -68,7 +68,7 @@
                     <div class="col-xs-12 col-sm-8">
                         <spring:bind path="title">
                             <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <label class="control-label" for="title">Titre est obligatoire</label>
+                                <label class="control-label" for="title">Titre ${fn:escapeXml(status.errorMessage)}</label>
                                 <form:input cssClass="form-control" id="title" placeholder="Titre" path="title" />
                             </div>
                         </spring:bind>
@@ -76,7 +76,7 @@
                     <div class="col-xs-12 col-sm-4">
                         <spring:bind path="date">
                             <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <label class="control-label" for="date">Date est obligatoire</label>
+                                <label class="control-label" for="date">Date ${fn:escapeXml(status.errorMessage)}</label>
                                 <form:input type="date" cssClass="form-control" id="date" placeholder="Date" path="date" />
                             </div>
                         </spring:bind>

@@ -58,6 +58,7 @@ public class AdminController {
             return "admin/recipe/form";
         }
 
+
         recipeService.save(recipe);
 
         redirectAttributes.addFlashAttribute("flashMessage", "La recette a été sauvée");

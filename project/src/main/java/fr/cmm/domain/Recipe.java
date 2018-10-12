@@ -17,10 +17,11 @@ public class Recipe {
     @ObjectId
     private String id;
 
-    @NotEmpty
+    @NotEmpty(message= "est obligatoire")
     private String title;
 
-    @NotNull
+
+    @NotNull(message= "est obligatoire")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date = new Date();
 
