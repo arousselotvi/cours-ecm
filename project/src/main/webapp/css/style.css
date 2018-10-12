@@ -57,6 +57,7 @@ ul.search-results li a {
     color: #7b7c7f;
 }
 
+
 @media (max-width: 600px) {
     ul.recipe-column {
         width: 100%;

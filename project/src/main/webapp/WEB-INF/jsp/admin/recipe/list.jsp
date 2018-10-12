@@ -2,6 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fragments" tagdir="/WEB-INF/tags/fragments" %>
 
 <!doctype html>
 <html lang="fr">
@@ -15,25 +16,7 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Cooking Miam Miam</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/admin/recettes">Recettes</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<fragments:headerAdmin/>
 
 <div class="container">
     <div class="row">

@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fragments" tagdir="/WEB-INF/tags/fragments" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <!doctype html>
 <html lang="fr">
@@ -17,7 +18,6 @@
 </head>
 <body>
     <fragments:header/>
-
     <div class="container">
         <fragments:recipe recipe="${recipe}" />
     </div>

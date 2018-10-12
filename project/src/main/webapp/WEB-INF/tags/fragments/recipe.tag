@@ -14,21 +14,32 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-8">
-        <h1>${fn:escapeXml(recipe.title)}</h1>
-        <p>${fn:escapeXml(recipe.intro)}</p>
-        <c:forEach var="recipeTags" items="${recipe.tags}">
-            <li>
-                <span class="label label-primary">"${recipeTags}"</span>
-            </li>
-        </c:forEach>
-        <p><fmt:formatDate value = "${recipe.date}" pattern = "dd MMM yyyy"/></p>
-        <c:if test="${not empty recipe.ingredients}">
-            <ul>
-                <c:forEach var="ingredient" items="${recipe.ingredients}">
-                    <li>${fn:escapeXml(ingredient.name)} : ${fn:escapeXml(ingredient.quantity)} ${fn:escapeXml(ingredient.unit)}</li>
-                </c:forEach>
-            </ul>
-        </c:if>
-        <p>${texttaglib:text(recipe.text)}</p>
+        <div class = "containerTitle">
+            <div class = "myTitle">
+                <h1>${fn:escapeXml(recipe.title)}</h1>
+            </div>
+            <div class = "myEditButton" style= "    bottom: 16px;
+                                                    position: absolute;
+                                                    right: 0;">
+                <button type="button">Edit</button>
+            </div>
+        </div>
+        <div class="restOfBody">
+            <p>${fn:escapeXml(recipe.intro)}</p>
+            <c:forEach var="recipeTags" items="${recipe.tags}">
+                <li>
+                    <span class="label label-primary">"${recipeTags}"</span>
+                </li>
+            </c:forEach>
+            <p><fmt:formatDate value = "${recipe.date}" pattern = "dd MMM yyyy"/></p>
+            <c:if test="${not empty recipe.ingredients}">
+                <ul>
+                    <c:forEach var="ingredient" items="${recipe.ingredients}">
+                        <li>${fn:escapeXml(ingredient.name)} : ${fn:escapeXml(ingredient.quantity)} ${fn:escapeXml(ingredient.unit)}</li>
+                    </c:forEach>
+                </ul>
+            </c:if>
+            <p>${texttaglib:text(recipe.text)}</p>
+        </div>
     </div>
 </div>

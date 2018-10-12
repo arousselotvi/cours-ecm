@@ -2,6 +2,7 @@
 
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
+
 <div class="row">
     <div class="col-xs-6">
         <input type="text" class="form-control" placeholder="Nom" name="ingredients[${not empty ingredientIndex ? ingredientIndex : param.ingredientIndex}].name" value="${fn:escapeXml(param.ingredientName)}" />
