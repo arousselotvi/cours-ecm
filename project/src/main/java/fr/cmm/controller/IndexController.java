@@ -77,7 +77,7 @@ public class IndexController {
 
     @RequestMapping("/contact")
     public String contact() {
-        return "contac";
+        return "contact";
     }
 
     @RequestMapping("/mentions-legales")

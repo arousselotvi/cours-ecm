@@ -15,4 +15,5 @@
     <div class="col-xs-1">
         <button type="button" class="btn btn-default" data-role="removeIngredient"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
     </div>
+
 </div>
