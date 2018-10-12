@@ -41,6 +41,10 @@ dependencies {
 
     compile 'log4j:log4j:1.2.17'
 
+    compile 'org.springframework.security:spring-security-core:4.0.3.RELEASE'
+    compile 'org.springframework.security:spring-security-config:4.0.3.RELEASE'
+    compile 'org.springframework.security:spring-security-web:4.0.3.RELEASE'
+
     providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
     providedCompile 'javax.servlet:jsp-api:2.0'
 
