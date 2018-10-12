@@ -1,10 +1,13 @@
 package fr.cmm.helper;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static java.util.Arrays.asList;
 
 public class Pagination {
+    public static final int PAGINATION_SIZE = 10;
     // 1 based page index
     private int pageIndex;
 
@@ -41,7 +44,7 @@ public class Pagination {
     }
 
     public List<Integer> getPages() {
-        return asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        return IntStream.range(1,getPageCount()+1).boxed().collect(Collectors.toList());
     }
 
     public int getPageIndex() {
