@@ -103,4 +103,21 @@ public class RecipeServiceTest {
 
         Assert.assertEquals(asList("tag1", "tag2", "tag3"), recipeService.findAllTags());
     }
+
+    @Test
+    public void findByIdWithInvalidId(){
+        Assert.assertEquals(null,recipeService.findById("kdnaojf"));
+    }
+    @Test
+    public void countByQuery(){
+        recipeService.save(new Recipe().withTags("alsace"));
+        recipeService.save(new Recipe().withTags("alsace"));
+        recipeService.save(new Recipe().withTags("alsace"));
+        recipeService.save(new Recipe().withTags("yolo"));
+        recipeService.save(new Recipe().withTags("yolo"));
+        PageQuery pageQuery=new PageQuery();
+        pageQuery.setTag("alsace");
+        long myCount =recipeService.countByQuery(pageQuery);
+        Assert.assertEquals(3,recipeService.countByQuery(pageQuery));
+    }
 }

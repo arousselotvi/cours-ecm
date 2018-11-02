@@ -32,6 +32,7 @@ dependencies {
 
     compile "javax.inject:javax.inject:1"
     compile 'javax.servlet:jstl:1.2'
+    compile 'javax.xml.bind:jaxb-api:2.3.0'
 
     compile 'org.mongodb:mongo-java-driver:2.13.1'
     compile 'org.jongo:jongo:1.1'
@@ -45,6 +46,11 @@ dependencies {
     compile 'org.springframework.security:spring-security-config:4.0.3.RELEASE'
     compile 'org.springframework.security:spring-security-web:4.0.3.RELEASE'
     compile 'org.springframework.security:spring-security-taglibs:4.0.3.RELEASE'
+    
+    compile 'org.json:json:20171018'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    
 
     providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
     providedCompile 'javax.servlet:jsp-api:2.0'

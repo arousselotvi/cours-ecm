@@ -18,9 +18,7 @@
             <div class = "myTitle">
                 <h1>${fn:escapeXml(recipe.title)}</h1>
             </div>
-            <div class = "myEditButton" style= "    bottom: 16px;
-                                                    position: absolute;
-                                                    right: 0;">
+            <div class = "myEditButton">
                 <button type="button">Edit</button>
             </div>
         </div>

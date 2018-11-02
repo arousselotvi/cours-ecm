@@ -1,6 +1,7 @@
 package fr.cmm.controller;
 
 import fr.cmm.controller.form.SearchForm;
+import fr.cmm.domain.Recipe;
 import fr.cmm.helper.Columns;
 import fr.cmm.helper.PageQuery;
 import fr.cmm.helper.Pagination;
@@ -64,7 +65,7 @@ public class IndexController {
 
     private Columns randomColumns() {
         Columns columns = new Columns();
-
+        //Iterable<Recipe> myRecipes=recipeService.findRandom(30);
         columns.add(recipeService.findRandom(10));
         columns.add(recipeService.findRandom(10));
         columns.add(recipeService.findRandom(10));
